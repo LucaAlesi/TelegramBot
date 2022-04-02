@@ -1,6 +1,6 @@
 import telegram
 from telegram import Update
-from telegram.ext import Updater, CallbackContext, CommandHandler
+from telegram.ext import Updater
 
 import PySimpleGUI as sg
 
@@ -15,8 +15,8 @@ error = [   [sg.Text('Error')]  ]
 
 window = sg.Window('TelePonti', layout, icon = 'icona.ico')
 
-TELEGRAM_BOT_TOKEN = ' '
-TELEGRAM_CHAT_ID = ' '
+TELEGRAM_BOT_TOKEN = '5126590019:AAESwqnr-n0acbYBW3oqsmw-n3E8wWqt4go'
+TELEGRAM_CHAT_ID = '-1001695678838'
 
 bot = telegram.Bot(token = TELEGRAM_BOT_TOKEN)
 
