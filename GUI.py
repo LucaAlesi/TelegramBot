@@ -15,8 +15,8 @@ error = [   [sg.Text('Error')]  ]
 
 window = sg.Window('TelePonti', layout, icon = 'icona.ico')
 
-TELEGRAM_BOT_TOKEN = '5126590019:AAESwqnr-n0acbYBW3oqsmw-n3E8wWqt4go'
-TELEGRAM_CHAT_ID = '-1001695678838'
+TELEGRAM_BOT_TOKEN = ' '
+TELEGRAM_CHAT_ID = ' '
 
 bot = telegram.Bot(token = TELEGRAM_BOT_TOKEN)
 
@@ -43,6 +43,6 @@ while True:
             bot.send_photo(chat_id = TELEGRAM_CHAT_ID, photo = open(values['Image'], 'rb'))
             sg.Popup("Immagine inviata!", icon = 'Yes.ico')
         except Exception as ex:
-            sg.Popup("L'immagine non è in PNG", icon = 'No.ico')
+            sg.Popup("Immagine non trovata", icon = 'No.ico')
             
 window.close()
