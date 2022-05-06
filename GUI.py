@@ -35,7 +35,7 @@ while True:
             bot.send_message(chat_id = TELEGRAM_CHAT_ID, text = Testo)
             sg.Popup("Messaggio inviato.", icon = 'Yes.ico')
         except Exception as ex:
-            sg.Popup("Messaggio privo di testo.", icon = 'No.ico')
+            sg.Popup("Messaggio privo di testo. ", icon = 'No.ico')
            
             
     if event == 'Image' :
